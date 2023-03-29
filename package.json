@@ -1,5 +1,6 @@
 {
   "name": "e-commerce-app",
+  "homepage": "https://sidd412.github.io/e-commerce-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "firebase": "^9.18.0",
+    "gh-pages": "^5.0.0",
     "mdb-react-ui-kit": "^6.0.0",
     "mdbootstrap": "^4.20.0",
     "react": "^18.2.0",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
